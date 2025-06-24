@@ -4,73 +4,82 @@
 <head>
     <meta charset="UTF-8">
     <title>Резюме</title>
+    <link href="styles.css" rel="stylesheet" />
 </head>
 
 <body>
-    <h1>Дмитрюк Даниил</h1>
-    <p><em>Изучаю <strong>html..</strong></em></p>
-    <h4>Создатель более 20 ютуб каналов</h4>
+    <div class="container">
+        <div class="info">
+            <img src="Ya.png" alt="Аватарка" class="avatar">
 
-    <hr/>
+            <div class="info-text">
+                <h1>Даниил Дмитрюк</h1>
+                <p><em>Изучаю <strong>html и css..</strong></em></p>
+                <p>Создатель более 20 ютуб каналов</p>
+                <h4>Мои соц сети</h4>
+                <a target="_blank" href="https://discord.gg/utSuvX9wnS">Discord</a>|
+                <a target="_blank" href="">Ютуб</a>
+            </div>
+        </div>
 
-    <h2>Мои соц сети</h2>
-    <ul>
-        <li><a target="_blank" href="https://discord.gg/utSuvX9wnS">Discord</a></li>
-        <li><a target="_blank" href="">Ютуб</a></li>
-    </ul>
+        <div class="card bg-green">
+            <h2>Мои увлечения</h2>
+            <a href="hobbies.html">Посмотреть увлечения</a>
+        </div>
 
-    <hr>
-
-    <h2>Мои увлечения</h2>
-    <a href="hobbies.html">Посмотреть увлечения</a>
-
-    <hr>
-
-    <h2>Таблица цифр</h2>
-    <table border="1">
-        <tr>
-            <th>-10</th>
-            <th>-100</th>
-            <th>-1000</th>
-            <th>-10000</th>
-            <th>-100000</th>
-            <th>-1000000</th>
-            <th>-10000000</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>11</td>
-            <td>101</td>
-            <td>1001</td>
-            <td>10001</td>
-            <td>100001</td>
-            <td>1000001</td>
-        </tr>
-    </table>
-    
-    <hr>
-
-    <h2>Связь:</h2>
-    <form action="bye.html">
-        <label for="name">Ваше Имя:</label>
-        <input type="text" id="name" placeholder="Имя">
-        <br>
-        <label for="mail">Ваш Mail:</label>
-        <input type="email" id="mail" placeholder="Маил">
-        <br>
-        <label for="number">Ваш Номер Телефона (необ.):</label>
-        <input type="number" id="number" placeholder="89999999999">
-        <br>
-        <label for="messeadge">Ваще сообщение:</label>
-        <textarea id="messeadge" rows="2" cols="30"></textarea>
-        <br>
-        <input type="submit" value="Отправить">
-    </form>
-
-    <hr>
-
-    <p>2025-2025. Данные не защищены.</p>
-
+        <div class="card bg-red">
+            <h2>Таблица цифр</h2>
+            <table class="table">
+                <tr>
+                    <td>Коронавирус</td>
+                    <td>Очень много</td>
+                    <td>2020-2021</td>
+                </tr>
+                <tr>
+                    <td>Пандемия</td>
+                    <td>Много</td>
+                    <td>2022-2023</td>
+                </tr>
+                <tr>
+                    <td>Ничего</td>
+                    <td>Мало</td>
+                    <td>2024-2025</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="card bg-yellow">
+            <h2>Мои майнкрафт сервера</h2>
+            <ol class="list">
+                <li>MineMap</li>
+                <li>MineMap 2</li>
+            </ol>
+        </div>
+        
+        <div class="connect">
+            <h2>Связь:</h2>
+            <form action="bye.html">
+                <div class="form-group">
+                    <div class="row">
+                        <label for="name"><div class=text>Ваше Имя:</div></label>
+                        <input type="text" id="name" placeholder="Имя">
+                        <br>
+                        <label for="mail"><div class=text>Ваш Mail:</div></label>
+                        <input type="email" id="mail" placeholder="Маил">
+                        <br>
+                    </div>
+                    <label for="messeadge"><div class=text>Ваще сообщение:</div></label>
+                    <textarea id="messeadge" rows="2" cols="30"></textarea>
+                    <br>
+                </div>
+                <input type="submit" value="Отправить" class="btn">
+            </form>
+            
+        </div>
+    </div>
+    <div class="bottom">
+            <p>© Rantap 2025-2025. Данные не защищены.</p>
+        </div>
 </body>
 
 </html>
